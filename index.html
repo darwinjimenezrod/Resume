@@ -8,7 +8,10 @@
       content="Automation-focused Engineer with strong experience building and maintaining end-to-end test automation solutions. Proficient in JavaScript, SQL, Python, and data integration."
     />
     <title>Darwin Jimenez | Digital Operations Senior Analyst</title>
+    <link rel="icon" href="public/icon-light-32x32.png" sizes="32x32" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href="public/icon-dark-32x32.png" sizes="32x32" media="(prefers-color-scheme: dark)" />
     <link rel="icon" href="public/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="public/apple-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -141,10 +144,11 @@
         line-height: 1.625;
         color: var(--muted-foreground);
       }
-      
+
       .profile-photo-wrap {
         margin-bottom: 1.25rem;
       }
+
       .profile-photo {
         display: block;
         width: 9rem;
@@ -155,6 +159,7 @@
         border: 2px solid color-mix(in oklch, var(--primary) 45%, transparent);
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
       }
+
       @media (min-width: 1024px) {
         .profile-photo {
           width: 10rem;
@@ -296,6 +301,10 @@
       .prose strong {
         color: var(--foreground);
         font-weight: 500;
+      }
+
+      .contact-lede {
+        margin-bottom: 1.5rem;
       }
 
       .exp-item {
@@ -581,6 +590,7 @@
                   width="160"
                   height="160"
                   decoding="async"
+                  fetchpriority="high"
                 />
               </div>
               <h1 class="name">Darwin Jimenez</h1>
@@ -992,7 +1002,7 @@
 
             <section id="contact">
               <h2 class="section-title">Contact</h2>
-              <p class="prose" style="margin-bottom: 1.5rem">
+              <p class="prose contact-lede">
                 I'm always interested in hearing about new opportunities, collaborations, or just connecting with fellow
                 professionals. Feel free to reach out through any of the channels below.
               </p>
