@@ -141,6 +141,26 @@
         line-height: 1.625;
         color: var(--muted-foreground);
       }
+      
+      .profile-photo-wrap {
+        margin-bottom: 1.25rem;
+      }
+      .profile-photo {
+        display: block;
+        width: 9rem;
+        height: 9rem;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center top;
+        border: 2px solid color-mix(in oklch, var(--primary) 45%, transparent);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+      }
+      @media (min-width: 1024px) {
+        .profile-photo {
+          width: 10rem;
+          height: 10rem;
+        }
+      }
 
       .nav {
         margin-top: 3rem;
@@ -553,6 +573,16 @@
         <div class="layout">
           <header class="sidebar" aria-label="Profile">
             <div>
+              <div class="profile-photo-wrap">
+                <img
+                  class="profile-photo"
+                  src="public/profile.png"
+                  alt="Darwin Jimenez — professional headshot"
+                  width="160"
+                  height="160"
+                  decoding="async"
+                />
+              </div>
               <h1 class="name">Darwin Jimenez</h1>
               <p class="title">Digital Operations Senior Analyst</p>
               <p class="tagline">
